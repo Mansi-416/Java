@@ -3,13 +3,25 @@ abstract class shape{
     abstract void area();
 }
 class circle extends shape{
+    int r;
+    public circle(int r){
+        this.r=r;
+    }
     void area(){
-        System.out.println("Area:12.56 sq.m");
+        double result=3.14*r*r;
+        System.out.println("The area of the circle is "+result);
     }
 }
 class rectangle extends shape{
+    int l;
+    int b;
+    public rectangle(int l,int b){
+        this.l=l;
+        this.b=b;
+    }
     void area(){
-        System.out.println("area:14 sq.m");
+        int result=l*b;
+        System.out.println("The area of the rectangle is "+l);
     }
 }
 public class abstractques{
