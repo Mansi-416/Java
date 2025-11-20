@@ -21,7 +21,7 @@ class multipleinheritance{
 
 
 //To make multiple inheritance workable
-//Interface-body is not declared;constructor cannot not created
+//Interface-body is not declared;constructor cannot not be created
 
 interface A1{
     void login();    //by default local and is abstract
@@ -34,7 +34,7 @@ class C implements A1,B1{
         System.out.println("Hellooo");
     }
 }
-public class multipleinheritance {
+public class multipleinheritance{
     public static void main(String[] args) {
         C c=new C();
         c.login();
